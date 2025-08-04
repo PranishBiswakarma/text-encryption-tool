@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Encryption & Decryption Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Caesar Cipher Tool</h1>
+    <label for="inputText">Text</label>
+    <textarea id="inputText" rows="4" placeholder="Enter your message here..."></textarea>
+
+    <label for="shiftKey">Shift Key</label>
+    <input type="number" id="shiftKey" value="3" min="1" max="25">
+
+    <div class="button-group">
+      <button onclick="handleEncrypt()">Encrypt</button>
+      <button onclick="handleDecrypt()">Decrypt</button>
+      <button onclick="handleClear()">Clear</button>
+    </div>
+
+    <label for="outputText">Result</label>
+    <textarea id="outputText" rows="4" readonly placeholder="Your result will appear here..."></textarea>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
